@@ -1,6 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
+const model = require('../../model.js')
 
 Page({
   data: {
@@ -8,13 +9,62 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    src2: "http://pokemondic.oss-cn-beijing.aliyuncs.com/cover.jpg?Expires=1516374339&OSSAccessKeyId=TMP.AQFHrL8cJD5s8MjT3RHfLYqVztiXmBXI9s6w05lGxobWUVeUfmXw5lsLIA93ADAtAhUA530Zc7pejBEiTig7P2Yr9uG7FAQCFHbjP4KTilK92VQiTop1ooFbILqY&Signature=eMGyB7JP097dkN6N13yYkz0FlPA%3D",
+    src2: model.src,
+    middldMenu:model.middleMenu,
+    bottomItem: model.bottomData,
+    movies: [
+      { url: 'http://img04.tooopen.com/images/20130712/tooopen_17270713.jpg' },
+      { url: 'http://img04.tooopen.com/images/20130617/tooopen_21241404.jpg' },
+      { url: 'http://img04.tooopen.com/images/20130701/tooopen_20083555.jpg' },
+      { url: 'http://img02.tooopen.com/images/20141231/sy_78327074576.jpg' }
+    ],
+    imgUrls: [
+      {
+        image:model.src,
+      },
+      {
+        image: model.src,
+      },
+      {
+        image: model.src,
+      },
+      // model.src,
+      // model.src,
+      // 'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
+      // 'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
+      // 'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+    ],
+    indicatorDots: true,
+    autoplay: true,
+    interval: 5000,
+    duration: 1000,
 
+  },
+  changeIndicatorDots: function (e) {
+    this.setData({
+      indicatorDots: !this.data.indicatorDots
+    })
+  },
+  changeAutoplay: function (e) {
+    this.setData({
+      autoplay: !this.data.autoplay
+    })
+  },
+  intervalChange: function (e) {
+    this.setData({
+      interval: e.detail.value
+    })
+  },
+  durationChange: function (e) {
+    this.setData({
+      duration: e.detail.value
+    })
   },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
-      url: '../logs/logs'
+      url:'./home'
+      //url: '../logs/logs'
     })
   },
   onLoad: function () {
@@ -52,6 +102,9 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  getUserNum: function(e){
+
   },
   onShareAppMessage: function () {
 

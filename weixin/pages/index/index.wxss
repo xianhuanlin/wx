@@ -2,20 +2,26 @@
 .userinfo {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: red;
+  /* align-items: center; */
+  background-color: aqua;
 }
 
 .userinfo-avatar {
-  width: 256rpx;
-  height: 256rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+  width: 64rpx;
+  height: 64rpx;
+    margin-top: 30rpx; 
+  margin-left: 30rpx; 
+   border-radius: 50%; 
+   /* position: fixed; */
+  background: aqua;
 }
 
 .userinfo-nickname {
   color: #000000;
-  height: 100px;
+  height: auto;
+  background: aqua;
+  /* align-items: center;
+  justify-content: center; */
 }
 
 .usermotto {
@@ -25,5 +31,106 @@
   
 }
 .container{
-  background-color: blueviolet
+  background-color: royalblue;
+  align-items:flex-start;
+}
+
+.swiper{
+  height: 500rpx;
+
+}
+.container{
+  background-color: royalblue;
+  align-items:flex-start;
+}
+
+.swiper{
+  height: 500rpx;
+  width: 100%;
+  justify-content: center;
+  align-items:center;
+  padding: 0;
+  
+}
+
+.top{
+   height: 500rpx;
+   background-color: rebeccapurple;
+}
+
+.slide-image{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.middle{
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30rpx;
+  display: flex;
+  background-color: white;
+}
+
+.middle-menu-image{
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 8rpx; 
+}
+
+.middle-menu-text{
+  color: #000000;
+  height: auto;
+  font-size: 30rpx;
+  margin-top: 10rpx;
+}
+
+.middle-view{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.bottom{
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* padding: 30rpx; */
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.bottom-view{
+  width: 100%;
+}
+
+.bottom-image{
+  width: 100%;
+  height: 480rpx;
+  /* margin-top: 20rpx; */
+}
+.bottom-title{
+  color: #000000;
+  height: auto;
+  font-size: 30rpx;
+  margin-top: 10rpx;
+}
+.bottom-pricepre{
+  color: gray;
+  height: auto;
+  font-size: 30rpx;
+  margin-top: 10rpx;
+}
+.bottom-price{
+  color: red;
+  height: auto;
+  font-size: 48rpx;
+  font-weight: 20rpx;
+  margin-top: 10rpx;
+}
+.priceView{
+  margin-bottom: 30rpx;
 }

@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    src:"http://pokemondic.oss-cn-beijing.aliyuncs.com/cover.jpg?Expires=1516374339&OSSAccessKeyId=TMP.AQFHrL8cJD5s8MjT3RHfLYqVztiXmBXI9s6w05lGxobWUVeUfmXw5lsLIA93ADAtAhUA530Zc7pejBEiTig7P2Yr9uG7FAQCFHbjP4KTilK92VQiTop1ooFbILqY&Signature=eMGyB7JP097dkN6N13yYkz0FlPA%3D",
+    src:"http://pokemondic.oss-cn-beijing.aliyuncs.com/cover.jpg?Expires=1516411009&OSSAccessKeyId=LTAIoITMJ1fWYr7A&Signature=S8L%2BdQKbC%2FYavdJ9tYFtXOAqex8%3D",
     
   },
 
