@@ -1,0 +1,11 @@
+<!--pages/index/detail.wxml-->
+<view class='top'> 
+    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="300">    
+      <block wx:for="{{movies}}" wx:for-index="index">    
+        <swiper-item>    
+          <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>    
+        </swiper-item>    
+      </block>    
+    </swiper>    
+</view>
+<text>pages/index/detail.wxml</text>
